@@ -1,0 +1,14 @@
+SELECT ?docid, ?doctitle, ?tableid, ?tabletitle, ?rownum, ?expnum WHERE
+{
+?doc <http://opendata.inra.fr/resources/atWeb/annotation/hasForID> ?docid .
+?doc <http://purl.org/dc/elements/1.1/title> ?doctitle .
+?doc <http://opendata.inra.fr/resources/atWeb/annotation/hasTable> ?x1 .
+?x1 <http://opendata.inra.fr/resources/atWeb/annotation/hasForID> ?tableid .
+?x1 <http://purl.org/dc/elements/1.1/title> ?tabletitle .
+?x1 <http://opendata.inra.fr/resources/atWeb/annotation/hasForRow> ?row .
+?row <http://opendata.inra.fr/resources/atWeb/annotation/hasForRowNumber> ?rownum .
+?row <http://opendata.inra.fr/resources/atWeb/annotation/hasForCell> ?x2 .
+?x2 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x3 .
+?x3 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFuzzyElement> ?x4 .
+?x4 <http://opendata.inra.fr/resources/atWeb/annotation/hasForMinKernel> ?expnum .
+}

@@ -1,0 +1,9 @@
+SELECT ?solid_qty, ?solid, ?x1, ?x2 WHERE
+{
+?solid <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://opendata.inra.fr/resources/BIORAF#biomass_quantity> .
+?solid <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x2 .
+?x2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://opendata.inra.fr/resources/atWeb/annotation/Scalar> .
+?x2 <http://opendata.inra.fr/resources/atWeb/annotation/hasForUnit> ?solid_unit .
+?x2 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFuzzyElement> ?x3 .
+?x3 <http://opendata.inra.fr/resources/atWeb/annotation/hasForMaxKernel> ?solid_qty .
+}

@@ -1,0 +1,9 @@
+SELECT ?liquid_qty, ?liquid_unit, ?output_unit WHERE
+{
+?liquid <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x4 .
+?x4 <http://opendata.inra.fr/resources/atWeb/annotation/hasForUnit> ?liquid_unit .
+?x4 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFuzzyElement> ?x5 .
+?x5 <http://opendata.inra.fr/resources/atWeb/annotation/hasForMaxKernel> ?liquid_qty .
+?output <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x6 .
+?x6 <http://opendata.inra.fr/resources/atWeb/annotation/hasForUnit> ?output_unit .
+}

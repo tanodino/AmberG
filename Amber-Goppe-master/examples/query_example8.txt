@@ -1,0 +1,4 @@
+select ?x1 ?x2 where {
+	<http://example.org/B> !(^<http://example.org/predicates/notExisting>) ?x1 .
+	?x1 <http://example.org/predicates/p2>+ ?x2 .
+}

@@ -1,0 +1,9 @@
+SELECT ?solid, ?liquid, ?output, ?solid_unit WHERE
+{
+?x1 <http://opendata.inra.fr/resources/core#hasAccessConcept> ?solid .
+?x1 <http://opendata.inra.fr/resources/core#hasAccessConcept> ?liquid .
+?x1 <http://opendata.inra.fr/resources/core#hasResultConcept> ?output .
+?solid <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x2 .
+?x2 <http://opendata.inra.fr/resources/atWeb/annotation/hasForUnit> ?solid_unit .
+?x2 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFuzzyElement> ?x3 .
+}

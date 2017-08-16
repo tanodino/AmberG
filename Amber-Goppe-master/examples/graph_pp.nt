@@ -1,0 +1,6 @@
+<http://example.org/A> <http://example.org/predicates/p1> <http://example.org/B> .
+<http://example.org/A> <http://example.org/predicates/p2> <http://example.org/C> .
+<http://example.org/C> <http://example.org/predicates/p5> <http://example.org/D> .
+<http://example.org/C> <http://example.org/predicates/p2> <http://example.org/E> .
+<http://example.org/E> <http://example.org/predicates/p3> <http://example.org/F> .
+<http://example.org/F> <http://example.org/predicates/p4> <http://example.org/B> .

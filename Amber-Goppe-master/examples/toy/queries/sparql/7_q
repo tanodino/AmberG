@@ -1,0 +1,12 @@
+SELECT ?row, ?x1, ?solid, ?liquid, ?output, ?solid_unit WHERE
+{
+?row <http://opendata.inra.fr/resources/atWeb/annotation/hasForRelation> ?x1 .
+?x1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://opendata.inra.fr/resources/BIORAF#milling_solid_quantity_output_relation> .
+?x1 <http://opendata.inra.fr/resources/core#hasAccessConcept> ?solid .
+?x1 <http://opendata.inra.fr/resources/core#hasAccessConcept> ?liquid .
+?x1 <http://opendata.inra.fr/resources/core#hasResultConcept> ?output .
+?solid <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://opendata.inra.fr/resources/BIORAF#biomass_quantity> .
+?solid <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x2 .
+?x2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://opendata.inra.fr/resources/atWeb/annotation/Scalar> .
+?x2 <http://opendata.inra.fr/resources/atWeb/annotation/hasForUnit> ?solid_unit .
+}

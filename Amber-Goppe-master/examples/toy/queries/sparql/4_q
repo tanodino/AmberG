@@ -1,0 +1,10 @@
+SELECT ?row, ?rownum, ?expnum, ?x1, ?x2, ?x3, ?x4 WHERE
+{
+?x1 <http://opendata.inra.fr/resources/atWeb/annotation/hasForRow> ?row .
+?row <http://opendata.inra.fr/resources/atWeb/annotation/hasForRowNumber> ?rownum .
+?row <http://opendata.inra.fr/resources/atWeb/annotation/hasForCell> ?x2 .
+?x2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://opendata.inra.fr/resources/BIORAF#experience_number> .
+?x2 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x3 .
+?x3 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFuzzyElement> ?x4 .
+?x4 <http://opendata.inra.fr/resources/atWeb/annotation/hasForMinKernel> ?expnum .
+}

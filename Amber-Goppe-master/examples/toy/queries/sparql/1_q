@@ -1,0 +1,9 @@
+SELECT ?docid, ?doctitle, ?tableid, ?tabletitle, ?rownum WHERE
+{
+?doc <http://opendata.inra.fr/resources/atWeb/annotation/hasForID> ?docid .
+?doc <http://purl.org/dc/elements/1.1/title> ?doctitle .
+?doc <http://opendata.inra.fr/resources/atWeb/annotation/hasTable> ?table .
+?table <http://opendata.inra.fr/resources/atWeb/annotation/hasForID> ?tableid .
+?table <http://purl.org/dc/elements/1.1/title> ?tabletitle .
+?table <http://opendata.inra.fr/resources/atWeb/annotation/hasForRow> ?row .
+}

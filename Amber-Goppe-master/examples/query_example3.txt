@@ -1,0 +1,3 @@
+select ?x1 ?x2 where {
+	?x1 <http://example.org/predicates/p3>/<http://example.org/predicates/p4> ?x2 .
+}

@@ -1,0 +1,8 @@
+SELECT ?output, ?output_qty, ?output_unit WHERE
+{
+?output <http://opendata.inra.fr/resources/atWeb/annotation/hasForFS> ?x6 .
+?x6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://opendata.inra.fr/resources/atWeb/annotation/Scalar> .
+?x6 <http://opendata.inra.fr/resources/atWeb/annotation/hasForUnit> ?output_unit .
+?x6 <http://opendata.inra.fr/resources/atWeb/annotation/hasForFuzzyElement> ?x7.
+?x7 <http://opendata.inra.fr/resources/atWeb/annotation/hasForMaxKernel> ?output_qty .
+}
